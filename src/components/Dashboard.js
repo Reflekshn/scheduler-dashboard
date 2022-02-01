@@ -73,7 +73,7 @@ class Dashboard extends Component {
 
       if (typeof data === 'object' && data.type === 'SET_INTERVIEW') {
         this.setState((previousState) =>
-          setInterview(previousState.data.id, data.interview)
+          setInterview(previousState, data.id, data.interview)
         );
       }
     };
